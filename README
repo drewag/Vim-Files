@@ -1,0 +1,6 @@
+Installation:
+
+    git clone blah ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    cd ~/.vim
+    git submodule update --init
