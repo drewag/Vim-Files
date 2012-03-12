@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/andrew/Sites/digital-assertion/app/config'
-let g:netrw_dirhist_2='/Users/andrew/Sites/digital-assertion/src/DigitalAssertion/WebBundle'
-let g:netrw_dirhist_3='/Users/andrew/Sites/digital-assertion/src/DigitalAssertion/WebBundle/Resources/views'
-let g:netrw_dirhist_4='/Users/andrew/Sites/digital-assertion/src/DigitalAssertion/WebBundle/Resources/views/Default'
-let g:netrw_dirhist_5='/Users/andrew/DigitalAssertion/Scripts/fetch_itunes_data'
-let g:netrw_dirhist_6='/Users/andrew/.ssh'
-let g:netrw_dirhist_7='/Users/andrew/git/flurry/src'
