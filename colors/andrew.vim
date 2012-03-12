@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:	Andrew Wagner <andrew@digitalassertion.com>
-" Last Change:	Date: 2011/02/07 
+" Last Change:	Date: 2012-03-12
 " Version:	    1.0 
 
 " cool help screens
@@ -11,58 +11,64 @@
 set background=dark
 hi clear
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
-let g:colors_name="andrew"
+let g:colors_name = "andrew"
 
-hi Normal	guifg=White guibg=#1e1f28 ctermfg=White
+hi Normal          gui=NONE        guifg=white     guibg=#121918
 
-" highlight groups
-hi Cursor	guibg=khaki guifg=slategrey
-"hi CursorIM
-"hi Directory
-"hi DiffAdd
-"hi DiffChange
-"hi DiffDelete
-"hi DiffText
-"hi ErrorMsg
-hi VertSplit	guibg=#c2bfa5 guifg=grey50 gui=none
-hi Folded	    guibg=grey30 guifg=gold
-hi FoldColumn	guibg=grey30 guifg=tan
-hi IncSearch	guifg=slategrey guibg=khaki
-"hi LineNr
-hi ModeMsg      guifg=goldenrod
-hi MoreMsg      guifg=SeaGreen
-hi NonText      guifg=LightBlue guibg=grey30
-hi Question     guifg=springgreen
-hi Search       guibg=peru guifg=wheat
-hi SpecialKey	guifg=yellowgreen
-hi StatusLine	guibg=#c2bfa5 guifg=black gui=none
-hi StatusLineNC	guibg=#c2bfa5 guifg=grey50 gui=none
-hi Title	    guifg=indianred
-hi Visual	    gui=none guifg=khaki guibg=olivedrab
-"hi VisualNOS
-hi WarningMsg	guifg=salmon
-"hi WildMenu
-"hi Menu
-"hi Scrollbar
-"hi Tooltip
+hi Comment         gui=NONE        guifg=#FFFF00   guibg=NONE      term=NONE       ctermfg=Yellow      ctermbg=NONE
 
-" syntax highlighting groups
-hi String       guifg=#db2b37 ctermfg=DarkRed
-hi Character    guifg=#776cc4 ctermfg=Blue
-hi Number       guifg=#776cc4 ctermfg=Blue
-hi Float        guifg=#776cc4 ctermfg=Blue
-hi Boolean      guifg=#b11888 ctermfg=Magenta
-hi Comment	    guifg=#ffff00 ctermfg=DarkYellow
-hi Constant	    guifg=#c67c48 ctermfg=Green
-hi Identifier	guifg=#009fbe ctermfg=Cyan
-hi Function	    guifg=#82c057 ctermfg=Cyan
-hi Statement	guifg=#b11888 ctermfg=Magenta
-hi PreProc      guifg=#c67c48 ctermfg=Green
-hi Type         guifg=#b11888 ctermfg=Magenta
-hi Special      guifg=navajowhite
-"hi Underlined
-hi Ignore   	guifg=grey40
-"hi Error
-hi Todo	    	guifg=orangered guibg=yellow2
+hi Constant        gui=NONE        guifg=Magenta   guibg=NONE      term=NONE       ctermfg=Magenta     ctermbg=NONE
+hi String          gui=NONE        guifg=Red       guibg=NONE      term=NONE       ctermfg=Red         ctermbg=NONE
+"hi Character      gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Number         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Boolean        gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Float          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi Identifier      gui=NONE        guifg=#7777FF   guibg=NONE      term=NONE       ctermfg=Blue        ctermbg=NONE
+"hi Function       gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi Statement       gui=NONE        guifg=Orange    guibg=NONE      term=bold       ctermfg=172         ctermbg=NONE
+"hi Conditional    gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Repeat         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Label          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Operator       gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Keyword        gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Exception      gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi link PreProc    statement
+"hi PreProc        gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Include        gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Define         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Macro          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi PreCondit      gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi Type            gui=NONE        guifg=#009500   guibg=NONE      term=bold       ctermfg=DarkGreen   ctermbg=NONE
+"hi StorageClass   gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Structure      gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Typedef        gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi Special         gui=NONE        guifg=#FFFF88   guibg=NONE      term=bold       ctermfg=LightYellow ctermbg=NONE
+"hi SpecialChar    gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+hi Tag             gui=underline   guifg=#FFFF88   guibg=NONE      term=underline  ctermfg=LightYellow ctermbg=NONE
+"hi Delimiter      gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi SpecialComment gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+"hi Debug          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+"hi Underlined     gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+"hi Ignore         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
+
+hi Error           gui=NONE        guifg=White     guibg=Red       term=reverse    ctermfg=White       ctermbg=Red
+
+hi Todo            gui=NONE        guifg=Blue      guibg=Yellow    term=standout   ctermfg=Black       ctermbg=Yellow
+
+hi Visual          gui=reverse     guifg=Black     guibg=Yellow    term=reverse    ctermfg=Black       ctermbg=Yellow
+hi Search          gui=NONE        guifg=Black     guibg=Cyan      term=reverse    ctermfg=Black       ctermbg=Cyan
+hi StatusLine      gui=NONE        guifg=Yellow    guibg=DarkGray  term=reverse    ctermfg=Yellow      ctermbg=DarkGray
+
+hi! link MoreMsg Comment
+hi! link ErrorMsg Visual
+hi! link WarningMsg ErrorMsg
+hi! link Question Comment

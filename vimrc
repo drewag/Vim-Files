@@ -1,8 +1,25 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 filetype plugin on
 
 " Set visual settings
 set number
 syntax on
+
+" Set status line
+set laststatus=2
+set statusline=%{fugitive#statusline()}
+set statusline+=%t   "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
 
 " Search Settings
 set hlsearch
