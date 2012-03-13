@@ -4,3 +4,6 @@ Installation:
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule update --init
+    cd ~/.vim/bundle/commant-t
+    bundle install
+    rake make
