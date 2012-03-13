@@ -1,9 +1,12 @@
 Installation:
 
-    git clone git@github.com:drewag/Vim-Files.git ~/.vim
+    git clone git://github.com/drewag/Vim-Files.git
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule update --init
+
+Optional Command-T Installation:
+
     cd ~/.vim/bundle/commant-t
     bundle install
     rake make
