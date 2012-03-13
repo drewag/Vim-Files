@@ -1,5 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype plugin indent on
 
 " ---------------------------- Keyboard Shortcuts --------------------------
 " Toggle menu in gvim
@@ -60,7 +61,6 @@ vnoremap <silent> # :<C-U>
 autocmd BufWritePre,BufRead * :%s/ \+$//egc
 
 " --------------------------- Custom Filetypes ------------------------------
-filetype on
 set bomb
 
 " Map extentions to existing syntax files
@@ -123,7 +123,6 @@ set shiftwidth=4
 set autoindent
 set expandtab
 set smartindent
-filetype plugin indent on
 
 " Code Sense
 highlight MatchParen ctermbg=4
@@ -134,7 +133,6 @@ autocmd Syntax * normal zR
 set switchbuf=useopen
 
 " -------------------------------- Plugins ----------------------------------
-filetype plugin on
 " Command-t
 let s:ruby_path = 'C:\Ruby192\bin'
 
