@@ -22,3 +22,15 @@
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T.git
     ignore = dirty
+[submodule "bundle/camelcasemotion"]
+	path = bundle/camelcasemotion
+	url = https://github.com/bkad/CamelCaseMotion.git
+    ignore = dirty
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/inkarkat/nerdcommenter.git
+    ignore = dirty
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = https://github.com/inkarkat/vim-repeat.git
+    ignore = dirty
