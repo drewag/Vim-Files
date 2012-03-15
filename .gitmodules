@@ -52,9 +52,16 @@
 [submodule "bundle/nosecompiler"]
 	path = bundle/nosecompiler
 	url = git://github.com/olethanh/Vim-nosecompiler.git
+    ignore = dirty
 [submodule "bundle/makegreen"]
 	path = bundle/makegreen
 	url = git://github.com/reinh/vim-makegreen.git
+    ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
+    ignore = dirty
+[submodule "bundle/twig"]
+	path = bundle/twig
+	url = git://github.com/beyondwords/vim-twig.git
+    ignore = dirty

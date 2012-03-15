@@ -87,8 +87,6 @@ set bomb
 au BufNewFile,BufRead *.str set filetype=xml
 au BufNewFile,BufRead *.h set filetype=c
 au BufNewFile,BufRead *.hpp set filetype=cpp
-au BufNewFile,BufRead *.html.twig set filetype=html
-au BufNewFile,BufRead *.xml.twig set filetype=xml
 au BufNewFile,BufRead *.ps1 set filetype=ps1
 
 " Custom syntax files
