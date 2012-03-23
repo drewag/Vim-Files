@@ -57,8 +57,19 @@ vnoremap <silent> # :<C-U>
 
 " --------------------------- Auto Commands ---------------------------------
 
-" Prompt user about deleting end of line whitespace errors
-autocmd BufWritePre,BufRead * :%s/ \+$//egc
+augroup vimrcgroup
+    " Prompt user about deleting end of line whitespace errors
+    autocmd BufWritePre * if !(&readonly) && &modifiable | :%s/ \+$//egc | endif
+
+    " Code Folding Start Open
+    autocmd BufRead * normal zR
+
+    " Spelling
+    autocmd BufRead,BufNewFile *.* set spell
+
+    " Python
+    autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+augroup END
 
 " --------------------------- Custom Filetypes ------------------------------
 set bomb
@@ -90,9 +101,6 @@ syntax on
 colorscheme andrew
 set number " Enable Line Numbers
 set nowrap " Don't wrap lines
-
-" Spelling
-autocmd BufRead,BufNewFile *.* set spell
 
 " Set status line
 set laststatus=2
@@ -127,7 +135,6 @@ set smartindent
 " Code Sense
 highlight MatchParen ctermbg=4
 set foldmethod=syntax
-autocmd Syntax * normal zR
 
 " Other Options
 set switchbuf=useopen
@@ -140,9 +147,6 @@ let s:ruby_path = 'C:\Ruby192\bin'
 set tags+=./.tagsdb
 set tags+=~/.tags/std3.3.tags
 set tag+=~/eng/libs/nuance/tagsdb
-
-" Python
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 " Taglist
 let generate_tags=1

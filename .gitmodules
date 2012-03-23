@@ -34,3 +34,6 @@
 	path = bundle/repeat
 	url = git://github.com/inkarkat/vim-repeat.git
     ignore = dirty
+[submodule "bundle/gitv"]
+	path = bundle/gitv
+	url = git://github.com/gregsexton/gitv.git
