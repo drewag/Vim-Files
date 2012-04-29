@@ -37,3 +37,19 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = git://github.com/gregsexton/gitv.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = git://github.com/fs111/pydoc.vim.git
+    ignore = dirty
+[submodule "bundle/rename"]
+	path = bundle/rename
+	url = git://github.com/danro/rename.vim.git
+    ignore = dirty
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+    ignore = dirty
+[submodule "bundle/pydiction"]
+	path = bundle/pydiction
+	url = git://github.com/vim-scripts/Pydiction.git
+    ignore = dirty

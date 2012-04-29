@@ -1,8 +1,17 @@
-call pathogen#runtime_append_all_bundles()
+﻿call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
 
+" ---------------------------- Global Variables --------------------------
+if has('win32') || has ('win64')
+    let g:vim_home = $VIM."/vimfiles"
+else
+    let g:vim_home = $HOME."/.vim"
+endif
+
 " ---------------------------- Keyboard Shortcuts --------------------------
+let mapleader = ","
+
 " Toggle menu in gvim
 nnoremap <F12> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 
@@ -147,6 +156,12 @@ let s:ruby_path = 'C:\Ruby192\bin'
 set tags+=./.tagsdb
 set tags+=~/.tags/std3.3.tags
 set tag+=~/eng/libs/nuance/tagsdb
+
+" Syntastic
+let g:syntastic_check_on_open=1
+
+" Pydiction
+let g:pydiction_location=g:vim_home . "/bundle/pydiction/complete-dict"
 
 " Taglist
 let generate_tags=1
