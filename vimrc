@@ -32,7 +32,6 @@ nnoremap gr gd[{V%:s/<C-R>///g<left><left>
 
 " Replace a global variable name
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
-nmap ,o :CommandT<CR>
 
 " Toggle between header and implimenation
 nmap <C-RIGHT> :A<CR>
@@ -148,10 +147,16 @@ set foldmethod=syntax
 
 " Other Options
 set switchbuf=useopen
+set wildignore+=*.pyc,*.bin,*.zip,*.exe,*.swp,*.so,*.7z
 
 " -------------------------------- Plugins ----------------------------------
-" Command-t
-let s:ruby_path = 'C:\Ruby192\bin'
+" Ctrl-P
+let g:ctrlp_map = ',o'
+let g:ctrlp_custom_ignore = {
+    \ 'dir': '\.git$\|\out$',
+    \ 'file': '',
+    \ 'link': '',
+    \ }
 
 " Ctags (Intellisense)
 set tags+=./.tagsdb

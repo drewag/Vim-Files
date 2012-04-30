@@ -5,9 +5,3 @@ Installation:
     cd ~/.vim
     git submodule update --init
     sudo python setup.py
-
-Optional Command-T Installation:
-
-    cd ~/.vim/bundle/commant-t
-    bundle install
-    rake make
