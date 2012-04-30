@@ -5,12 +5,23 @@
 import os
 import shutil
 
+print "Downloading nose..."
 os.system( 'git clone git://github.com/nose-devs/nose.git nose_temp' )
-os.system( 'python nose_temp/setup.py install' )
+print
+print "Installing nose..."
+os.system( 'cd nose_temp && python setup.py install' )
+print
 
+print "Deleting temp files..."
 shutil.rmtree('nose_temp')
 
+print "Downloading pyflakes..."
 os.system( 'git clone git://github.com/kevinw/pyflakes.git pyflakes_temp' )
-os.system( 'python pyflakes_temp/setup.py install' )
+print
+print "Installing pyflakes..."
+os.system( 'cd pyflakes_temp && python setup.py install' )
+print
 
+print "Deleting temp files..."
 shutil.rmtree('pyflakes_temp')
+print

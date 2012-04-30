@@ -4,6 +4,7 @@ Installation:
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule update --init
+    sudo python setup.py
 
 Optional Command-T Installation:
 
