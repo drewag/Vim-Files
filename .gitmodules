@@ -53,3 +53,9 @@
 	path = bundle/pydiction
 	url = git://github.com/vim-scripts/Pydiction.git
     ignore = dirty
+[submodule "bundle/nosecompiler"]
+	path = bundle/nosecompiler
+	url = git://github.com/olethanh/Vim-nosecompiler.git
+[submodule "bundle/makegreen"]
+	path = bundle/makegreen
+	url = git://github.com/reinh/vim-makegreen.git

@@ -78,6 +78,7 @@ augroup vimrcgroup
 
     " Python
     autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+    autocmd BufNewFile,BufRead *.py compiler nose
 augroup END
 
 " --------------------------- Custom Filetypes ------------------------------
