@@ -12,9 +12,6 @@ print "Installing nose..."
 os.system( 'cd nose_temp && python setup.py install' )
 print
 
-print "Deleting temp files..."
-shutil.rmtree('nose_temp')
-
 print "Downloading pyflakes..."
 os.system( 'git clone git://github.com/kevinw/pyflakes.git pyflakes_temp' )
 print
@@ -23,5 +20,6 @@ os.system( 'cd pyflakes_temp && python setup.py install' )
 print
 
 print "Deleting temp files..."
+shutil.rmtree('nose_temp')
 shutil.rmtree('pyflakes_temp')
 print
