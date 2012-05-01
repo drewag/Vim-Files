@@ -76,8 +76,7 @@ augroup vimrcgroup
     autocmd BufRead,BufNewFile *.* set spell
 
     " Python
-    autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
-    autocmd BufNewFile,BufRead *.py compiler nose
+    autocmd BufNewFile,BufRead,FileReadPost *.py exec 'source ' . g:vim_home . '/python.vim'
 augroup END
 
 " --------------------------- Custom Filetypes ------------------------------
@@ -173,4 +172,4 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Compact_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_File_Fold_Auto_Close = 1
+"let Tlist_File_Fold_Auto_Close = 1
