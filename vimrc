@@ -142,6 +142,9 @@ set smartindent
 highlight MatchParen ctermbg=4
 set foldmethod=syntax
 
+" Autocomplete
+set completeopt=menu,menuone,longest " Complete options (disable preview scratch window)
+
 " Other Options
 set switchbuf=useopen
 set wildignore+=*.pyc,*.bin,*.zip,*.exe,*.swp,*.so,*.7z
