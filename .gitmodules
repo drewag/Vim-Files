@@ -65,3 +65,6 @@
 	path = bundle/twig
 	url = git://github.com/beyondwords/vim-twig.git
     ignore = dirty
+[submodule "bundle/clangcomplete"]
+	path = bundle/clangcomplete
+	url = git://github.com/Rip-Rip/clang_complete.git
