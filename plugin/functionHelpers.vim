@@ -6,7 +6,7 @@ map <F4> :call AddClassNameToFunction()<CR>
 
 function! AddClassNameToFunction()
     let bufname = fnamemodify( bufname("%"), ':t' )
-    let classname = matchstr( bufname,'\w*_\zs[^.]*' )
+    let classname = matchstr( bufname,'\zs[^._]*' )
     " Insert classname
     normal ^
     call search( '(' )
@@ -32,6 +32,6 @@ function! AddClassNameToFunction()
     call search( ';' )
     normal xo{
     normal <<o}
-    " exe "normal \<F5>"
+    exe "normal \<F5>"
     normal k
 endfunction
