@@ -147,6 +147,10 @@ set switchbuf=useopen
 set wildignore+=*.pyc,*.bin,*.zip,*.exe,*.swp,*.so,*.7z
 
 " -------------------------------- Plugins ----------------------------------
+" Alternate
+let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
+let g:alternateSearchPath = g:alternateSearchPath . ',reg:#Include#Code#,reg:#Code#Include#,reg:#Base#Code#,reg:#Code#Base#'
+
 " Ctrl-P
 let g:ctrlp_map = ',o'
 let g:ctrlp_custom_ignore = {
@@ -159,9 +163,6 @@ let g:ctrlp_custom_ignore = {
 set tags+=./.tagsdb
 set tags+=~/.tags/std3.3.tags
 set tag+=~/eng/libs/nuance/tagsdb
-
-" Syntastic
-let g:syntastic_check_on_open=1
 
 " Pydiction
 let g:pydiction_location=g:vim_home . "/bundle/pydiction/complete-dict"
