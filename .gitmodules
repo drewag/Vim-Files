@@ -68,3 +68,6 @@
 [submodule "bundle/clangcomplete"]
 	path = bundle/clangcomplete
 	url = git://github.com/Rip-Rip/clang_complete.git
+[submodule "bundle/googletest-syntax"]
+	path = bundle/googletest-syntax
+	url = git://github.com/ciaranm/googletest-syntax.git

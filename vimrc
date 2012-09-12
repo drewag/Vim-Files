@@ -84,9 +84,10 @@ set bomb
 
 " Map extentions to existing syntax files
 au BufNewFile,BufRead *.str set filetype=xml
-au BufNewFile,BufRead *.h set filetype=c
+au BufNewFile,BufRead *.h set filetype=cpp
 au BufNewFile,BufRead *.hpp set filetype=cpp
 au BufNewFile,BufRead *.ps1 set filetype=ps1
+au BufNewFile,BufRead *Test.cpp runtime! syntax/googletest.vim
 
 " Custom syntax files
 au BufNewFile,BufRead *.bnf set filetype=nuance-grammar
