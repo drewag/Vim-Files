@@ -1,7 +1,7 @@
 " Vim color file
 " Maintainer:	Andrew Wagner <andrew@digitalassertion.com>
 " Last Change:	Date: 2012-03-12
-" Version:	    1.0 
+" Version:	    1.0
 
 " cool help screens
 " :he group-name
@@ -29,7 +29,7 @@ hi String          gui=NONE        guifg=Red       guibg=NONE      term=NONE    
 hi Identifier      gui=NONE        guifg=#7777FF   guibg=NONE      term=NONE       ctermfg=Blue        ctermbg=NONE
 "hi Function       gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 
-hi Statement       gui=NONE        guifg=Orange    guibg=NONE      term=bold       ctermfg=172         ctermbg=NONE
+hi Statement       gui=NONE        guifg=Orange    guibg=NONE      term=bold       ctermfg=green       ctermbg=NONE
 "hi Conditional    gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 "hi Repeat         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 "hi Label          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
@@ -67,6 +67,8 @@ hi Todo            gui=NONE        guifg=Blue      guibg=Yellow    term=standout
 hi Visual          gui=reverse     guifg=Black     guibg=Yellow    term=reverse    ctermfg=Black       ctermbg=Yellow
 hi Search          gui=NONE        guifg=Black     guibg=Cyan      term=reverse    ctermfg=Black       ctermbg=Cyan
 hi StatusLine      gui=NONE        guifg=Yellow    guibg=DarkGray  term=reverse    ctermfg=Yellow      ctermbg=DarkGray
+
+hi SpellBad        gui=NONE        guifg=White     guibg=Red       term=reverse    ctermfg=White       ctermbg=Red
 
 hi! link MoreMsg Comment
 hi! link ErrorMsg Visual

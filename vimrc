@@ -152,6 +152,7 @@ set wildignore+=*.pyc,*.bin,*.zip,*.exe,*.swp,*.so,*.7z
 
 " -------------------------------- Plugins ----------------------------------
 " Alternate
+let g:alternateNoDefaultAlternate = 1
 let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc'
 let g:alternateSearchPath = g:alternateSearchPath . ',reg:#Include#Code#,reg:#Code#Include#,reg:#Base#Code#,reg:#Code#Base#'
 
