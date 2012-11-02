@@ -29,7 +29,7 @@ hi String          gui=NONE        guifg=Red       guibg=NONE      term=NONE    
 hi Identifier      gui=NONE        guifg=#7777FF   guibg=NONE      term=NONE       ctermfg=Blue        ctermbg=NONE
 "hi Function       gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 
-hi Statement       gui=NONE        guifg=Orange    guibg=NONE      term=bold       ctermfg=green       ctermbg=NONE
+hi Statement       gui=NONE        guifg=Orange    guibg=NONE      term=bold       ctermfg=11          ctermbg=NONE
 "hi Conditional    gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 "hi Repeat         gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
 "hi Label          gui=NONE        guifg=NONE      guibg=NONE      term=NONE       ctermfg=NONE        ctermbg=NONE
