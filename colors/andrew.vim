@@ -1,5 +1,5 @@
 " Vim color file
-" Maintainer:	Andrew Wagner <andrew@digitalassertion.com>
+" Maintainer:	Andrew Wagner
 " Last Change:	Date: 2012-03-12
 " Version:	    1.0
 
