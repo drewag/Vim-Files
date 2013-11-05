@@ -134,6 +134,9 @@ set smartcase
 " Indents
 set tabstop=4
 set shiftwidth=4
+au BufNewFile,BufRead *.rb set tabstop=2
+au BufNewFile,BufRead *.rb set shiftwidth=2
+
 set autoindent
 set expandtab
 set smartindent
