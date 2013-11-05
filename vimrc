@@ -80,7 +80,6 @@ augroup vimrcgroup
 augroup END
 
 " --------------------------- Custom Filetypes ------------------------------
-set bomb
 
 " Map extentions to existing syntax files
 au BufNewFile,BufRead *.str set filetype=xml
