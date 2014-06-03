@@ -136,6 +136,14 @@ set tabstop=4
 set shiftwidth=4
 au BufNewFile,BufRead *.rb set tabstop=2
 au BufNewFile,BufRead *.rb set shiftwidth=2
+au BufNewFile,BufRead *.css set tabstop=2
+au BufNewFile,BufRead *.css set shiftwidth=2
+au BufNewFile,BufRead *.scss set tabstop=2
+au BufNewFile,BufRead *.scss set shiftwidth=2
+au BufNewFile,BufRead *.html set tabstop=2
+au BufNewFile,BufRead *.html set shiftwidth=2
+au BufNewFile,BufRead *.js set tabstop=4
+au BufNewFile,BufRead *.js set shiftwidth=4
 
 set autoindent
 set expandtab
