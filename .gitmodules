@@ -71,3 +71,6 @@
 [submodule "bundle/googletest-syntax"]
 	path = bundle/googletest-syntax
 	url = git://github.com/ciaranm/googletest-syntax.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
