@@ -144,6 +144,8 @@ au BufNewFile,BufRead *.html set tabstop=2
 au BufNewFile,BufRead *.html set shiftwidth=2
 au BufNewFile,BufRead *.js set tabstop=4
 au BufNewFile,BufRead *.js set shiftwidth=4
+au BufNewFile,BufRead *.swift set tabstop=4
+au BufNewFile,BufRead *.swift set shiftwidth=4
 
 set autoindent
 set expandtab
@@ -169,8 +171,8 @@ let g:alternateSearchPath = g:alternateSearchPath . ',reg:#Include#Code#,reg:#Co
 " Ctrl-P
 let g:ctrlp_map = ',o'
 let g:ctrlp_custom_ignore = {
-    \ 'dir': '\.git$\|\out$',
-    \ 'file': '',
+    \ 'dir': '\.git$\|out$|',
+    \ 'file': '\.a$\|\.swiftdeps\|\.o$\|\.swiftdoc$\|\.swiftmodule$\|\.d$\|\.db$\|\.DS_Store$',
     \ 'link': '',
     \ }
 
