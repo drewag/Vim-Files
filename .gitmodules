@@ -74,6 +74,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/swiftvim"]
-	path = bundle/swiftvim
-	url = https://github.com/keith/swift.vim.git
+[submodule "bundle/swift-apple"]
+	path = bundle/swift-apple
+	url = https://github.com/jph00/swift-apple.git
