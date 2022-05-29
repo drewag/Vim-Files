@@ -6,14 +6,14 @@ import os
 import shutil
 
 print "Downloading nose..."
-os.system( 'git clone git://github.com/nose-devs/nose.git nose_temp' )
+os.system( 'git clone https://github.com/nose-devs/nose.git nose_temp' )
 print
 print "Installing nose..."
 os.system( 'cd nose_temp && python setup.py install' )
 print
 
 print "Downloading pyflakes..."
-os.system( 'git clone git://github.com/kevinw/pyflakes.git pyflakes_temp' )
+os.system( 'git clone https://github.com/kevinw/pyflakes.git pyflakes_temp' )
 print
 print "Installing pyflakes..."
 os.system( 'cd pyflakes_temp && python setup.py install' )
